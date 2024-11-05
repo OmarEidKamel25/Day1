@@ -1,0 +1,25 @@
+                                               Day 1  1/11/2024
+
+
+namespace First_Project
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter number of small carbet");
+            int numberOfSmallCarbet = Convert.ToInt32(Console.ReadLine());  
+            Console.WriteLine("Enter number of large carbet");
+            int numberOfLargeCarbet = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Price per small carbet : 25$");
+            Console.WriteLine("Price per large carbet : 35$");
+            int cost = (numberOfSmallCarbet * 25) + (numberOfLargeCarbet * 35);
+            Console.WriteLine($"Cost : {cost}");
+            double tax = cost * .06;
+            Console.WriteLine($"Tax :{tax} $");
+            double totalEstimate = cost * 1.06;
+            Console.WriteLine($"Total estimate : {totalEstimate}");
+            Console.WriteLine("This estimate is valid for 30 days");
+        }
+    }
+}
